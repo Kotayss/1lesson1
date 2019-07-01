@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 
 public class lesson1 {
     public static void main(String[] args) throws Exception {
-        int x = 0;
+        float x = 0;
         System.out.println("ax + b = 0");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("введите a: ");

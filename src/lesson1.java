@@ -3,7 +3,6 @@ import java.io.InputStreamReader;
 
 public class lesson1 {
     public static void main(String[] args) throws Exception {
-        float x = 0;
         System.out.println("ax + b = 0");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("введите a: ");
@@ -12,10 +11,13 @@ public class lesson1 {
         String s1 = reader.readLine();
         float a = Float.parseFloat(s);
         float b = Float.parseFloat(s1);
-        if(a != 0)
+        if(a != 0 && b != 0)
             System.out.println("x = -b/a\n" + "x = " + (-b)/a);
         else
+            if((a != 0 && b == 0 )|| (a == 0 && b == 0))
             System.out.println("x - любое число");
+            else
+                if(a == 0 && b != 0)
+                    System.out.println("уравнение не имеет решения");
     }
 }
-

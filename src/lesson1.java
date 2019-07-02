@@ -14,10 +14,13 @@ public class lesson1 {
         if(a != 0 && b != 0)
             System.out.println("x = -b/a\n" + "x = " + (-b)/a);
         else
-            if((a != 0 && b == 0 )|| (a == 0 && b == 0))
+            if( (a == 0 && b == 0))
             System.out.println("x - любое число");
             else
                 if(a == 0 && b != 0)
                     System.out.println("уравнение не имеет решения");
+                    else
+                        if(a !=0 && b == 0)
+                            System.out.println(“x = 0”);
     }
 }
